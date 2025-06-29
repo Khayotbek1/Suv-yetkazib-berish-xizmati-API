@@ -7,6 +7,11 @@ class WaterSerializer(ModelSerializer):
         model = Water
         fields = '__all__'
 
+    def validate_litr(self, value):
+        if value > 19:
+            raise serializers.ValidationError("Bunday katta litrlarda suv sotilmaydi")
+        return value
+
 
 class ClientSerializer(ModelSerializer):
     class Meta:

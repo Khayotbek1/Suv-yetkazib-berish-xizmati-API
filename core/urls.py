@@ -9,7 +9,7 @@ schema_view = get_schema_view(
    openapi.Info(
       title="Water API",
       default_version='v1',
-      description="Codial Rest_Framework ucun imtihon loyihasi",
+      description="Codial Rest_Framework uchun imtihon loyihasi",
       contact=openapi.Contact(email="zepdeveloper404@gmail.com"),
       license=openapi.License(name="Codial License"),
    ),

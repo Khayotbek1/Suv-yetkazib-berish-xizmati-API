@@ -10,8 +10,8 @@ class RegisterSerializer(ModelSerializer):
     def create(self, validated_data):
         return User.objects.create_user(**validated_data)
 
-    def validate_yosh(self, value):
-        if value < 16:
+    def validate_age(self, value):
+        if value < 19:
             raise serializers.ValidationError("Yoshingiz mos kelmaydi")
         return value
 
